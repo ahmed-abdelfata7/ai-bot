@@ -1,0 +1,2343 @@
+{
+  "title": [
+    {
+      "en": "Hello I am Ahmed how to you search today?"
+    }
+  ],
+  "options": [
+    {
+      "title": {
+        "en": "Product Types"
+      },
+      "keywords": {
+        "en": ["product", "types"]
+      },
+      "event": "PRODUCT_TYPES"
+    },
+    {
+      "title": {
+        "en": "Brands"
+      },
+      "keywords": {
+        "en": ["brands"]
+      },
+      "event": "BRANDS"
+    },
+    {
+      "title": {
+        "en": "Your Device"
+      },
+      "keywords": {
+        "en": ["device"]
+      },
+      "event": "DEVICE"
+    }
+  ],
+  "on": {
+    "PRODUCT_TYPES": "product_types",
+    "BRANDS": "brands",
+    "DEVICE": "device"
+  },
+  "states": {
+    "product_types": {
+      "title": [
+        {
+          "en": "Which of the following accessories are you interested in? :) :) :)"
+        }
+      ],
+      "options": [
+        {
+          "title": {
+            "en": "Accessories"
+          },
+          "keywords": {
+            "en": ["accessories"]
+          },
+          "event": "ACCESSORIES"
+        },
+        {
+          "title": {
+            "en": "Audio"
+          },
+          "keywords": {
+            "en": ["audio", "speakers", "bluetooth", "ear"]
+          },
+          "event": "AUDIO"
+        },
+        {
+          "title": {
+            "en": "Cases"
+          },
+          "keywords": {
+            "en": ["cases"]
+          },
+          "event": "CASES"
+        },
+        {
+          "title": {
+            "en": "Charging Solutions"
+          },
+          "keywords": {
+            "en": ["charging", "charger", "cable", "power"]
+          },
+          "event": "CHARGING_SOLUTIONS"
+        }
+      ],
+      "on": {
+        "ACCESSORIES": "accessories",
+        "AUDIO": "audio",
+        "CASES": "cases",
+        "CHARGING_SOLUTIONS": "charging_solutions"
+      },
+      "states": {
+        "accessories": {
+          "title": [
+            {
+              "en": "Let's narrow down your search. Choose one of the product types below."
+            }
+          ],
+          "options": [
+            {
+              "title": {
+                "en": "Car Accessories"
+              },
+              "keywords": {
+                "en": ["car", "auto", "road", "travel"]
+              },
+              "event": "CAR_ACCESSORIES"
+            },
+            {
+              "title": {
+                "en": "Desk Accessories"
+              },
+              "keywords": {
+                "en": ["desk", "home", "office"]
+              },
+              "event": "DESK_ACCESSORIES"
+            },
+            {
+              "title": {
+                "en": "Grips and Stands"
+              },
+              "keywords": {
+                "en": ["grips", "stands"]
+              },
+              "event": "GRIPS_AND_STANDS"
+            }
+          ],
+          "on": {
+            "CAR_ACCESSORIES": "car_accessories",
+            "DESK_ACCESSORIES": "desk_accessories",
+            "GRIPS_AND_STANDS": "grips_and_stands"
+          },
+          "states": {
+            "car_accessories": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_CAR_ACCESSORIES"
+                }
+              ]
+            },
+            "desk_accessories": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_DESK_ACCESSORIES"
+                }
+              ]
+            },
+            "grips_and_stands": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_GRIPS_AND_STANDS"
+                }
+              ]
+            }
+          }
+        },
+        "audio": {
+          "title": [
+            {
+              "en": "Let's narrow down your search. Choose one of the product types below."
+            }
+          ],
+          "options": [
+            {
+              "title": {
+                "en": "In Ear Headphones"
+              },
+              "keywords": {
+                "en": ["ear", "headphones"]
+              },
+              "event": "IN_EAR_HEADPHONES"
+            },
+            {
+              "title": {
+                "en": "On Ear Headphones"
+              },
+              "keywords": {
+                "en": ["ear", "headphones"]
+              },
+              "event": "ON_EAR_HEADPHONES"
+            },
+            {
+              "title": {
+                "en": "Over Ear Headphones"
+              },
+              "keywords": {
+                "en": ["ear", "headphones"]
+              },
+              "event": "OVER_EAR_HEADPHONES"
+            },
+            {
+              "title": {
+                "en": "Speakers"
+              },
+              "keywords": {
+                "en": ["speakers"]
+              },
+              "event": "SPEAKERS"
+            }
+          ],
+          "on": {
+            "IN_EAR_HEADPHONES": "in_ear_headphones",
+            "ON_EAR_HEADPHONES": "on_ear_headphones",
+            "OVER_EAR_HEADPHONES": "over_ear_headphones",
+            "SPEAKERS": "speakers"
+          },
+          "states": {
+            "in_ear_headphones": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_IN_EAR_HEADPHONES"
+                }
+              ]
+            },
+            "on_ear_headphones": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ON_EAR_HEADPHONES"
+                }
+              ]
+            },
+            "over_ear_headphones": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_OVER_EAR_HEADPHONES"
+                }
+              ]
+            },
+            "speakers": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_SPEAKERS"
+                }
+              ]
+            }
+          }
+        },
+        "cases": {
+          "title": [
+            {
+              "en": "Let's narrow down your search. Choose one of the product types below."
+            }
+          ],
+          "options": [
+            {
+              "title": {
+                "en": "Case-Wallet"
+              },
+              "keywords": {
+                "en": ["wallet"]
+              },
+              "event": "CASE_WALLET"
+            },
+            {
+              "title": {
+                "en": "Fashion"
+              },
+              "keywords": {
+                "en": ["fashion"]
+              },
+              "event": "FASHION"
+            },
+            {
+              "title": {
+                "en": "Rugged"
+              },
+              "keywords": {
+                "en": ["rugged"]
+              },
+              "event": "RUGGED"
+            },
+            {
+              "title": {
+                "en": "Slim Protection"
+              },
+              "keywords": {
+                "en": ["slim", "protection"]
+              },
+              "event": "SLIM_PROTECTION"
+            }
+          ],
+          "on": {
+            "CASE_WALLET": "case_wallet",
+            "FASHION": "fashion",
+            "RUGGED": "rugged",
+            "SLIM_PROTECTION": "slim_protection"
+          },
+          "states": {
+            "case_wallet": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_CASE_WALLET"
+                }
+              ]
+            },
+            "fashion": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_FASHION"
+                }
+              ]
+            },
+            "rugged": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_RUGGED"
+                }
+              ]
+            },
+            "slim_protection": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_SLIM_PROTECTION"
+                }
+              ]
+            }
+          }
+        },
+        "charging_solutions": {
+          "title": [
+            {
+              "en": "Let's narrow down your search. Choose one of the product types below."
+            }
+          ],
+          "options": [
+            {
+              "title": {
+                "en": "Car Chargers"
+              },
+              "keywords": {
+                "en": ["car", "charger", "chargers"]
+              },
+              "event": "CAR_CHARGERS"
+            },
+            {
+              "title": {
+                "en": "Charge/Sync Cables"
+              },
+              "keywords": {
+                "en": ["charge", "sync", "cable", "cables"]
+              },
+              "event": "CHARGE_SYNC_CABLES"
+            },
+            {
+              "title": {
+                "en": "Home/Travel Chargers"
+              },
+              "keywords": {
+                "en": ["home", "travel", "charger", "chargers"]
+              },
+              "event": "HOME_TRAVEL_CHARGERS"
+            },
+            {
+              "title": {
+                "en": "Portable Power"
+              },
+              "keywords": {
+                "en": ["portable", "power"]
+              },
+              "event": "PORTABLE_POWER"
+            },
+            {
+              "title": {
+                "en": "Wireless Charging"
+              },
+              "keywords": {
+                "en": ["wireless", "charging", "charger", "chargers"]
+              },
+              "event": "WIRELESS_CHARGING"
+            }
+          ],
+          "on": {
+            "CAR_CHARGERS": "car_chargers",
+            "CHARGE_SYNC_CABLES": "charge_sync_cables",
+            "HOME_TRAVEL_CHARGERS": "home_travel_chargers",
+            "PORTABLE_POWER": "portable_power",
+            "WIRELESS_CHARGING": "wireless_charging"
+          },
+          "states": {
+            "car_chargers": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_CAR_CHARGERS"
+                }
+              ]
+            },
+            "charge_sync_cables": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_CHARGE_SYNC_CABLES"
+                }
+              ]
+            },
+            "home_travel_chargers": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_HOME_TRAVEL_CHARGERS"
+                }
+              ]
+            },
+            "portable_power": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_PORTABLE_POWER"
+                }
+              ]
+            },
+            "wireless_charging": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_WIRELESS_CHARGING"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "brands": {
+      "title": [
+        {
+          "en": "Let's narrow down your search. Choose one of the brand types below."
+        }
+      ],
+      "options": [
+        {
+          "title": {
+            "en": "Belkin"
+          },
+          "keywords": {
+            "en": ["belkin"]
+          },
+          "event": "BELKIN"
+        },
+        {
+          "title": {
+            "en": "Case-Mate"
+          },
+          "keywords": {
+            "en": ["case", "mate"]
+          },
+          "event": "CASE_MATE"
+        },
+        {
+          "title": {
+            "en": "JBL"
+          },
+          "keywords": {
+            "en": ["jbl"]
+          },
+          "event": "JBL"
+        },
+        {
+          "title": {
+            "en": "mophie"
+          },
+          "keywords": {
+            "en": ["mophie"]
+          },
+          "event": "MOPHIE"
+        },
+        {
+          "title": {
+            "en": "PopSockets"
+          },
+          "keywords": {
+            "en": ["popsockets"]
+          },
+          "event": "POPSOCKETS"
+        },
+        {
+          "title": {
+            "en": "Urban Armor Gear (UAG)"
+          },
+          "keywords": {
+            "en": ["urban", "armor", "gear", "uag"]
+          },
+          "event": "UAG"
+        },
+        {
+          "title": {
+            "en": "Ventev"
+          },
+          "keywords": {
+            "en": ["ventev"]
+          },
+          "event": "VENTEV"
+        },
+        {
+          "title": {
+            "en": "ZAGG"
+          },
+          "keywords": {
+            "en": ["zagg"]
+          },
+          "event": "ZAGG"
+        }
+      ],
+      "on": {
+        "BELKIN": "belkin",
+        "CASE_MATE": "case_mate",
+        "JBL": "jbl",
+        "MOPHIE": "mophie",
+        "POPSOCKETS": "popsockets",
+        "UAG": "uag",
+        "VENTEV": "ventev",
+        "ZAGG": "zagg"
+      },
+      "states": {
+        "belkin": {
+          "entry": [
+            {
+              "type": "CLICK_CATEGORY",
+              "category": "CONN_ALL_PRODUCTS",
+              "productIds": [
+                "PGI_WCA004DQWH",
+                "PGI_WIZ001TTBK",
+                "PGI_WIZ017TTWH",
+                "PGI_CAC001BT1MBK",
+                "PGI_CAA001BT3MWH",
+                "PGI_CAA002BT1MBK",
+                "PGI_CCD001BT1MBK",
+                "PGI_WIB002TTBK",
+                "PGI_CAA001BT1MBK",
+                "PGI_CAB005BT1MBK",
+                "PGI_CCB004BTBK",
+                "PGI_CAA001BT1MWH",
+                "PGI_CCA003BTBK",
+                "PGI_WCD001DQ1MWH",
+                "PGI_CCA003BT04BK",
+                "PGI_WCE001DQ1MWH",
+                "PGI_CAB001BT1MBK",
+                "PGI_CAA003BT1MBK",
+                "PGI_WCB002DQWH",
+                "PGI_CAB001BT3MBK",
+                "PGI_CAB002BT1MBK",
+                "PGI_CAA003BT1MWH",
+                "PGI_CAB003BT1MBK",
+                "PGI_WIC002BTGR",
+                "PGI_WCB007DQWH",
+                "PGI_CCB001BTBK",
+                "PGI_WIZ002TTBK",
+                "PGI_CCE001BT1MBK",
+                "PGI_AVC002BTBK",
+                "PGI_WIA001TTBK",
+                "PGI_WIA001TTWH",
+                "PGI_WCA006DQWH",
+                "PGI_WIB001TTBK"
+              ]
+            }
+          ]
+        },
+        "case_mate": {
+          "entry": [
+            {
+              "type": "CLICK_CATEGORY",
+              "category": "CONN_ALL_PRODUCTS",
+              "productIds": [
+                "PGI_CM049274",
+                "PGI_CM049636",
+                "PGI_CM049784",
+                "PGI_CM049632",
+                "PGI_CM049782",
+                "PGI_CM049630",
+                "PGI_CM049634",
+                "PGI_CM052328",
+                "PGI_CM051604",
+                "PGI_CM049182",
+                "PGI_CM049318",
+                "PGI_CM051322",
+                "PGI_CM050456",
+                "PGI_CM050458",
+                "PGI_CM053136",
+                "PGI_CM051510",
+                "PGI_CM051416",
+                "PGI_CM052680",
+                "PGI_CM050680",
+                "PGI_CM050460",
+                "PGI_CM049228",
+                "PGI_CM049292",
+                "PGI_CM050682",
+                "PGI_CM049032",
+                "PGI_CM052682",
+                "PGI_CM049248",
+                "PGI_CM050684",
+                "PGI_CM049156",
+                "PGI_CM049202",
+                "PGI_CM051572",
+                "PGI_CM051574",
+                "PGI_CM049294",
+                "PGI_CM051386",
+                "PGI_CM051478",
+                "PGI_CM052356",
+                "PGI_CM051480",
+                "PGI_CM051666",
+                "PGI_CM051384",
+                "PGI_CM051668",
+                "PGI_CM049622",
+                "PGI_CM049218",
+                "PGI_CM049272",
+                "PGI_CM049778",
+                "PGI_CM049666",
+                "PGI_CM049264",
+                "PGI_CM049226",
+                "PGI_CM049174",
+                "PGI_CM049780",
+                "PGI_CM049316",
+                "PGI_CM051624",
+                "PGI_CM051342",
+                "PGI_CM051436",
+                "PGI_CM051438",
+                "PGI_CM051530",
+                "PGI_CM049308",
+                "PGI_CM051344",
+                "PGI_CM051532",
+                "PGI_CM051094",
+                "PGI_CM051626",
+                "PGI_CM053118",
+                "PGI_CM053120",
+                "PGI_CM050694",
+                "PGI_CM051468",
+                "PGI_CM051470",
+                "PGI_CM051376",
+                "PGI_CM050692",
+                "PGI_CM051564",
+                "PGI_CM051374",
+                "PGI_CM050696",
+                "PGI_CM053134",
+                "PGI_CM051420",
+                "PGI_CM051514",
+                "PGI_CM051660",
+                "PGI_CM051326",
+                "PGI_CM051378",
+                "PGI_CM051472",
+                "PGI_CM051608",
+                "PGI_CM051656",
+                "PGI_CM051658",
+                "PGI_CM049304",
+                "PGI_CM051524",
+                "PGI_CM052270",
+                "PGI_CM049168",
+                "PGI_CM052272",
+                "PGI_CM049214",
+                "PGI_CM051430",
+                "PGI_CM052268",
+                "PGI_CM051336",
+                "PGI_CM049260",
+                "PGI_CM052274",
+                "PGI_CM051618",
+                "PGI_CM051062",
+                "PGI_CM048936",
+                "PGI_CM050608",
+                "PGI_CM048932",
+                "PGI_CM050376",
+                "PGI_CM050370",
+                "PGI_CM050372",
+                "PGI_CM053062",
+                "PGI_CM052260",
+                "PGI_CM051338",
+                "PGI_CM049400",
+                "PGI_CM050374",
+                "PGI_CM052258",
+                "PGI_CM046290",
+                "PGI_CM049392",
+                "PGI_CM051526",
+                "PGI_CM049408",
+                "PGI_CM049416",
+                "PGI_CM051432",
+                "PGI_CM049216",
+                "PGI_CM050386",
+                "PGI_CM050382",
+                "PGI_CM049170",
+                "PGI_CM049306",
+                "PGI_CM050384",
+                "PGI_CM051620",
+                "PGI_CM049262",
+                "PGI_CM049198",
+                "PGI_CM049152",
+                "PGI_CM052736",
+                "PGI_CM049136",
+                "PGI_CM049244",
+                "PGI_CM050394",
+                "PGI_CM050396",
+                "PGI_CM049288",
+                "PGI_CM050398",
+                "PGI_CM052734",
+                "PGI_CM052894",
+                "PGI_CM049024",
+                "PGI_CM051662",
+                "PGI_CM049290",
+                "PGI_CM051380",
+                "PGI_CM049200",
+                "PGI_CM049026",
+                "PGI_CM049020",
+                "PGI_CM051474",
+                "PGI_CM049022",
+                "PGI_CM051568",
+                "PGI_CM051674",
+                "PGI_CM051486",
+                "PGI_CM051534",
+                "PGI_CM051580",
+                "PGI_CM053132",
+                "PGI_CM051628",
+                "PGI_CM051392",
+                "PGI_CM051346",
+                "PGI_CM051440"
+              ]
+            }
+          ]
+        },
+        "jbl": {
+          "entry": [
+            {
+              "type": "CLICK_CATEGORY",
+              "category": "CONN_ALL_PRODUCTS",
+              "productIds": [
+                "PGI_JBL2GBAR21DB2BLKAM",
+                "PGI_JBLBAR1000PROBLKAM",
+                "PGI_JBLCHARGE5BLKAM",
+                "PGI_JBLCHARGE5BLUAM",
+                "PGI_JBLBAR300PROBLKAM",
+                "PGI_JBLBOOMBOX3BLKAM",
+                "PGI_JBLBAR20AIOM2BLKAM",
+                "PGI_JBLBAR500PROBLKAM",
+                "PGI_JBLBOOMBOX3SQUADAM",
+                "PGI_JBLCHARGE5GRYAM",
+                "PGI_JBLCLIP4ECOBLUAM",
+                "PGI_JBLCLIP4GRYAM",
+                "PGI_JBLCLIP4BLUAM",
+                "PGI_JBLCHARGE5SQUADAM",
+                "PGI_JBLCLIP4ECOGRNAM",
+                "PGI_JBLCHARGE5TEALAM",
+                "PGI_JBLCLIP4BLKAM",
+                "PGI_JBLCLIP4ECOWHTAM",
+                "PGI_JBLCHARGE5REDAM",
+                "PGI_JBLCLIP4SQUADAM",
+                "PGI_JBLENDURRUN2BLKAM",
+                "PGI_JBLFLIP6TEALAM",
+                "PGI_JBLFLIP6REDAM",
+                "PGI_JBLCLIP4PINKAM",
+                "PGI_JBLFLIP6GREYAM",
+                "PGI_JBLENDURPEAK3BLKAM",
+                "PGI_JBLFLIP6BLKAM",
+                "PGI_JBLCLIP4REDAM",
+                "PGI_JBLFLIP6SQUADAM",
+                "PGI_JBLFLIP6BLUAM",
+                "PGI_JBLGO3TEALAM",
+                "PGI_JBLGO3GRYAM",
+                "PGI_JBLGO3ECOWHTAM",
+                "PGI_JBLGO3ECOGRNAM",
+                "PGI_JBLGO3REDAM",
+                "PGI_JBLLIVE460NCBLKAM",
+                "PGI_JBLGO3ECOBLUAM",
+                "PGI_JBLGO3BLUAM",
+                "PGI_JBLJR310REDAM",
+                "PGI_JBLGO3BLKAM",
+                "PGI_JBLLIVE460NCBLUAM",
+                "PGI_JBLPARTYBOX110AM",
+                "PGI_JBLLIVE460NCWHTAM",
+                "PGI_JBLPARTYBOXGOBAM",
+                "PGI_JBLPARTYBOX310AM",
+                "PGI_JBLLIVEFREE2TWSBAM",
+                "PGI_JBLLIVE660NCBLKAM",
+                "PGI_JBLPBENCOREESSAM",
+                "PGI_JBLPARTYBOX1000AM",
+                "PGI_JBLPULSE5BLKAM",
+                "PGI_JBLQUANTUM100BLKAM",
+                "PGI_JBLQUANTUMONEBLKAM",
+                "PGI_JBLT110BLKAM",
+                "PGI_JBLQUANTUM300BLKAM",
+                "PGI_JBLQUANTUMTWSBLKAM",
+                "PGI_JBLQ810WLBLKAM",
+                "PGI_JBLQUANTUM610BLKAM",
+                "PGI_JBLQUANTUM200BLKAM",
+                "PGI_JBLQUANTUM400BLKAM",
+                "PGI_JBLTFLEXWHTAM",
+                "PGI_JBLT510BTBLUAM",
+                "PGI_JBLTBUDSBLKAM",
+                "PGI_JBLTBUDSBLUAM",
+                "PGI_JBLQ350WLBLKAM",
+                "PGI_JBLT660NCBLKAM",
+                "PGI_JBLT510BTBLKAM",
+                "PGI_JBLT510BTWHTAM",
+                "PGI_JBLT710BTBLKAM",
+                "PGI_JBLT215BTBLKAM",
+                "PGI_JBLT760NCBLKAM",
+                "PGI_JBLVBUDSWHTAM",
+                "PGI_JBLVBEAMWHTAM",
+                "PGI_JBLXTREME3BLKAM",
+                "PGI_JBLXTREME3CAMOAM",
+                "PGI_JBLXTREME3BLUAM",
+                "PGI_JBLVBEAMBLKAM"
+              ]
+            }
+          ]
+        },
+        "mophie": {
+          "entry": [
+            {
+              "type": "CLICK_CATEGORY",
+              "category": "CONN_ALL_PRODUCTS",
+              "productIds": [
+                "PGI_401105865",
+                "PGI_401107911",
+                "PGI_401108800",
+                "PGI_401107913",
+                "PGI_401108985",
+                "PGI_401305902",
+                "PGI_401305840",
+                "PGI_401108802",
+                "PGI_401305903",
+                "PGI_401307633",
+                "PGI_401306598",
+                "PGI_409905968",
+                "PGI_401309740",
+                "PGI_401307635",
+                "PGI_409909296",
+                "PGI_409905969",
+                "PGI_409903782",
+                "PGI_409909294",
+                "PGI_401309755",
+                "PGI_409909293",
+                "PGI_401309750",
+                "PGI_409909303",
+                "PGI_409911484",
+                "PGI_409909298",
+                "PGI_409911483",
+                "PGI_409909308",
+                "PGI_409911480",
+                "PGI_409911482",
+                "PGI_409911481",
+                "PGI_409911487"
+              ]
+            }
+          ]
+        },
+        "popsockets": {
+          "entry": [
+            {
+              "type": "CLICK_CATEGORY",
+              "category": "CONN_ALL_PRODUCTS",
+              "productIds": [
+                "PGI_800446",
+                "PGI_112557",
+                "PGI_112365",
+                "PGI_800454",
+                "PGI_113143",
+                "PGI_800420",
+                "PGI_113005",
+                "PGI_800421",
+                "PGI_800470",
+                "PGI_800857",
+                "PGI_801146",
+                "PGI_801357",
+                "PGI_800997",
+                "PGI_800491",
+                "PGI_112613",
+                "PGI_801286",
+                "PGI_801001",
+                "PGI_800549",
+                "PGI_802457",
+                "PGI_801632",
+                "PGI_801573",
+                "PGI_801503",
+                "PGI_801649",
+                "PGI_800961",
+                "PGI_802351",
+                "PGI_801708",
+                "PGI_801697",
+                "PGI_802443",
+                "PGI_802465",
+                "PGI_803090",
+                "PGI_801986",
+                "PGI_802709",
+                "PGI_802692",
+                "PGI_802693",
+                "PGI_802592",
+                "PGI_802713",
+                "PGI_802919",
+                "PGI_802690",
+                "PGI_803538",
+                "PGI_802755",
+                "PGI_804153",
+                "PGI_804074",
+                "PGI_803946",
+                "PGI_803735",
+                "PGI_803750",
+                "PGI_803558",
+                "PGI_804218",
+                "PGI_803544",
+                "PGI_804149",
+                "PGI_805443",
+                "PGI_805444",
+                "PGI_805065",
+                "PGI_805431",
+                "PGI_804378",
+                "PGI_803751",
+                "PGI_804928",
+                "PGI_804834",
+                "PGI_805136",
+                "PGI_804333",
+                "PGI_805478",
+                "PGI_805149",
+                "PGI_805500",
+                "PGI_805505",
+                "PGI_805749",
+                "PGI_805445",
+                "PGI_805499",
+                "PGI_805572",
+                "PGI_806039",
+                "PGI_805555",
+                "PGI_805969",
+                "PGI_805570",
+                "PGI_805836",
+                "PGI_806141",
+                "PGI_806611",
+                "PGI_806491",
+                "PGI_805983",
+                "PGI_805999",
+                "PGI_806701",
+                "PGI_806700",
+                "PGI_806299",
+                "PGI_806828",
+                "PGI_806710",
+                "PGI_806832",
+                "PGI_806708",
+                "PGI_806850",
+                "PGI_806853",
+                "PGI_806810",
+                "PGI_806776",
+                "PGI_806812",
+                "PGI_806827",
+                "PGI_806892",
+                "PGI_806875",
+                "PGI_806876",
+                "PGI_806894",
+                "PGI_806878",
+                "PGI_806891",
+                "PGI_806887",
+                "PGI_806856",
+                "PGI_806898",
+                "PGI_A1612H11"
+              ]
+            }
+          ]
+        },
+        "uag": {
+          "entry": [
+            {
+              "type": "CLICK_CATEGORY",
+              "category": "CONN_ALL_PRODUCTS",
+              "productIds": [
+                "PGI_214358117272",
+                "PGI_214007114040",
+                "PGI_214007115555",
+                "PGI_214358114040",
+                "PGI_964420113240",
+                "PGI_964420119140",
+                "PGI_114038115555",
+                "PGI_114039115555",
+                "PGI_114275119049",
+                "PGI_114287114040",
+                "PGI_114287117272",
+                "PGI_114306117272",
+                "PGI_114275115555",
+                "PGI_114039114040",
+                "PGI_964418113240",
+                "PGI_114275117272",
+                "PGI_114295114040",
+                "PGI_114091114040",
+                "PGI_114295117272",
+                "PGI_114295119049",
+                "PGI_114295115555",
+                "PGI_114091110243",
+                "PGI_964418119140",
+                "PGI_114088110243",
+                "PGI_114288117272",
+                "PGI_114296114040",
+                "PGI_114288114040",
+                "PGI_114307114040",
+                "PGI_114276117272",
+                "PGI_114315113940",
+                "PGI_114307117272",
+                "PGI_114276114040",
+                "PGI_114308113940",
+                "PGI_114296117272",
+                "PGI_214120113333",
+                "PGI_214130113940",
+                "PGI_114278119494",
+                "PGI_214144114242",
+                "PGI_214135113333",
+                "PGI_114277113940",
+                "PGI_114297113940",
+                "PGI_114219114242",
+                "PGI_114298119494",
+                "PGI_114029113333",
+                "PGI_114220114242",
+                "PGI_114222114242",
+                "PGI_114221113333",
+                "PGI_11422211397B",
+                "PGI_114221113940",
+                "PGI_214132114040",
+                "PGI_214122114040",
+                "PGI_114222113333",
+                "PGI_114222113940",
+                "PGI_114221114242",
+                "PGI_114052114141",
+                "PGI_114054114141",
+                "PGI_114311114040",
+                "PGI_114311117272",
+                "PGI_114301114040",
+                "PGI_114291117272",
+                "PGI_114281114343",
+                "PGI_114301114343",
+                "PGI_114053114141",
+                "PGI_114055117272",
+                "PGI_114052117272",
+                "PGI_114291114040",
+                "PGI_114054117272",
+                "PGI_114055114141",
+                "PGI_114283114061",
+                "PGI_214122114061",
+                "PGI_114301117272",
+                "PGI_114281113333",
+                "PGI_214132114061",
+                "PGI_114068113131",
+                "PGI_114303114033",
+                "PGI_214137114061",
+                "PGI_114281114151",
+                "PGI_114291114343",
+                "PGI_114055113333",
+                "PGI_114281114040",
+                "PGI_114311114343",
+                "PGI_114301114151",
+                "PGI_114303114061",
+                "PGI_114301113333",
+                "PGI_114281117272",
+                "PGI_114283114033",
+                "PGI_114070114343",
+                "PGI_114068114343",
+                "PGI_214134114343",
+                "PGI_114294114333",
+                "PGI_114070113131",
+                "PGI_114071113131",
+                "PGI_214357114343",
+                "PGI_114069114343",
+                "PGI_114294114341",
+                "PGI_114305114085",
+                "PGI_114314114333",
+                "PGI_114314114341",
+                "PGI_114286114341",
+                "PGI_114286114348",
+                "PGI_114286114381",
+                "PGI_114286114333",
+                "PGI_114286114085",
+                "PGI_114305114381",
+                "PGI_114305114333",
+                "PGI_614318117272",
+                "PGI_21421411723A",
+                "PGI_214215114333",
+                "PGI_21421411313A",
+                "PGI_214214114333",
+                "PGI_114305114341",
+                "PGI_21421511313A",
+                "PGI_114305114348",
+                "PGI_21421511723A",
+                "PGI_114080313535",
+                "PGI_114083313535"
+              ]
+            }
+          ]
+        },
+        "ventev": {
+          "entry": [
+            {
+              "type": "CLICK_CATEGORY",
+              "category": "CONN_ALL_PRODUCTS",
+              "productIds": [
+                "PGI_EWLSCHG10LEDVNV",
+                "PGI_R2400TYPCVNV",
+                "PGI_VPAR2240MICVNV",
+                "PGI_R2340CMCRVNV",
+                "PGI_ACABMFISTE10VNV",
+                "PGI_ACABMFISTEVNV",
+                "PGI_ACABACSTEE10VNV",
+                "PGI_ACABACBLKVNV",
+                "PGI_ACABCLTGSTEVNV",
+                "PGI_ACABMFIROSEVNV",
+                "PGI_CSTNDMC3KVNV",
+                "PGI_ACABCCSTEELVNV",
+                "PGI_COILCABTGVNV",
+                "PGI_COILCABACVNV",
+                "PGI_MICROCABLVNV",
+                "PGI_LTGCAB6FTWHTVNV",
+                "PGI_TYPEACCABGRYVNV",
+                "PGI_MICROCABLWHTVNV",
+                "PGI_TYPACCAB6GRYVNV",
+                "PGI_TYPEACCABWHTVNV",
+                "PGI_TYPEACCABBLKVNV",
+                "PGI_LTGCAB6FTVNV",
+                "PGI_TYPACCAB6PNKVNV",
+                "PGI_TYPACCAB6WHTVNV",
+                "PGI_PWRCEL5PGVNV",
+                "PGI_CABCLTG6WHVNV",
+                "PGI_PD1180DCLVNV",
+                "PGI_CABCLTGWHVNV",
+                "PGI_MICROC6FTVNV",
+                "PGI_CABCLTG6VNV",
+                "PGI_TYPCCCAB6WHTVNV",
+                "PGI_TYPECCCABGRYVNV",
+                "PGI_WPRQ1300AVNV",
+                "PGI_PWRCEL10PGVNV",
+                "PGI_RQ1300VPAVNV",
+                "PGI_DPRQ13VPAVNV",
+                "PGI_DPPD1180VNV",
+                "PGI_RQ1300DACVNV",
+                "PGI_MNTQIV2VNV",
+                "PGI_WRLSPADVNV",
+                "PGI_WRLSWATCHVNV",
+                "PGI_WRLSPADDUOVNV",
+                "PGI_WWDDWINTVNV",
+                "PGI_WRLSPADPLUSVNV",
+                "PGI_WLSBATTSTNDVNV",
+                "PGI_WCWMINIVNV"
+              ]
+            }
+          ]
+        },
+        "zagg": {
+          "entry": [
+            {
+              "type": "CLICK_CATEGORY",
+              "category": "CONN_ALL_PRODUCTS",
+              "productIds": [
+                "PGI_702311699",
+                "PGI_702311703",
+                "PGI_702311724",
+                "PGI_702311706",
+                "PGI_702311717",
+                "PGI_702311704",
+                "PGI_702311705",
+                "PGI_702311715",
+                "PGI_702311723",
+                "PGI_702311725",
+                "PGI_702311718",
+                "PGI_702311726",
+                "PGI_702311729",
+                "PGI_702311730",
+                "PGI_702311728",
+                "PGI_702311743",
+                "PGI_702311727",
+                "PGI_702311735",
+                "PGI_702311746",
+                "PGI_702311744",
+                "PGI_702311754",
+                "PGI_702311897",
+                "PGI_702311745",
+                "PGI_702311898",
+                "PGI_702311909",
+                "PGI_702311900",
+                "PGI_702311752",
+                "PGI_702311899",
+                "PGI_702311911",
+                "PGI_702311753",
+                "PGI_702311751",
+                "PGI_702311945",
+                "PGI_702311947",
+                "PGI_702311948",
+                "PGI_702311953",
+                "PGI_702311956",
+                "PGI_702311912",
+                "PGI_702311955",
+                "PGI_702312029",
+                "PGI_702312055",
+                "PGI_702312032",
+                "PGI_702312147",
+                "PGI_702312056",
+                "PGI_702312031",
+                "PGI_702312148",
+                "PGI_702312273"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "device": {
+      "title": [
+        {
+          "en": "Which phone are you shopping for?"
+        }
+      ],
+      "options": [
+        {
+          "title": {
+            "en": "Apple"
+          },
+          "keywords": {
+            "en": ["apple"]
+          },
+          "event": "APPLE"
+        },
+        {
+          "title": {
+            "en": "Samsung"
+          },
+          "keywords": {
+            "en": ["samsung"]
+          },
+          "event": "SAMSUNG"
+        },
+        {
+          "title": {
+            "en": "Google"
+          },
+          "keywords": {
+            "en": ["google"]
+          },
+          "event": "GOOGLE"
+        }
+      ],
+      "on": {
+        "APPLE": "apple",
+        "SAMSUNG": "samsung",
+        "GOOGLE": "google"
+      },
+      "states": {
+        "apple": {
+          "entry": [
+            {
+              "type": "CLICK_CATEGORY",
+              "category": "CONN_ALL_PRODUCTS",
+              "productIds": [
+                "PGI_702311699",
+                "PGI_702311703",
+                "PGI_702311724",
+                "PGI_702311706",
+                "PGI_702311717",
+                "PGI_702311704",
+                "PGI_702311705",
+                "PGI_702311715",
+                "PGI_702311723",
+                "PGI_702311725",
+                "PGI_702311718",
+                "PGI_702311726",
+                "PGI_702311729",
+                "PGI_702311730",
+                "PGI_702311728",
+                "PGI_702311743",
+                "PGI_702311727",
+                "PGI_702311735",
+                "PGI_702311746",
+                "PGI_702311744",
+                "PGI_702311754",
+                "PGI_702311897",
+                "PGI_702311745",
+                "PGI_702311898",
+                "PGI_702311909",
+                "PGI_702311900",
+                "PGI_702311752",
+                "PGI_702311899",
+                "PGI_702311911",
+                "PGI_702311753",
+                "PGI_702311751",
+                "PGI_702311945",
+                "PGI_702311947",
+                "PGI_702311948",
+                "PGI_702311953",
+                "PGI_702311956",
+                "PGI_702311912",
+                "PGI_702311955",
+                "PGI_702312029",
+                "PGI_702312055",
+                "PGI_702312032",
+                "PGI_702312056",
+                "PGI_702312031",
+                "PGI_ACABMFISTE10VNV",
+                "PGI_ACABMFISTEVNV",
+                "PGI_ACABCLTGSTEVNV",
+                "PGI_ACABMFIROSEVNV",
+                "PGI_COILCABTGVNV",
+                "PGI_LTGCAB6FTWHTVNV",
+                "PGI_LTGCAB6FTVNV",
+                "PGI_CABCLTG6WHVNV",
+                "PGI_PD1180DCLVNV",
+                "PGI_CABCLTGWHVNV",
+                "PGI_CABCLTG6VNV",
+                "PGI_WWDDWINTVNV",
+                "PGI_114038115555",
+                "PGI_114039115555",
+                "PGI_114275119049",
+                "PGI_114287114040",
+                "PGI_114287117272",
+                "PGI_114306117272",
+                "PGI_114275115555",
+                "PGI_114039114040",
+                "PGI_114275117272",
+                "PGI_114295114040",
+                "PGI_114091114040",
+                "PGI_114295117272",
+                "PGI_114295119049",
+                "PGI_114295115555",
+                "PGI_114091110243",
+                "PGI_114088110243",
+                "PGI_114288117272",
+                "PGI_114296114040",
+                "PGI_114288114040",
+                "PGI_114307114040",
+                "PGI_114276117272",
+                "PGI_114315113940",
+                "PGI_114307117272",
+                "PGI_114276114040",
+                "PGI_114308113940",
+                "PGI_114296117272",
+                "PGI_114278119494",
+                "PGI_114277113940",
+                "PGI_114297113940",
+                "PGI_114219114242",
+                "PGI_114298119494",
+                "PGI_114029113333",
+                "PGI_114220114242",
+                "PGI_114222114242",
+                "PGI_114221113333",
+                "PGI_11422211397B",
+                "PGI_114221113940",
+                "PGI_114222113333",
+                "PGI_114222113940",
+                "PGI_114221114242",
+                "PGI_114052114141",
+                "PGI_114054114141",
+                "PGI_114311114040",
+                "PGI_114311117272",
+                "PGI_114301114040",
+                "PGI_114291117272",
+                "PGI_114281114343",
+                "PGI_114301114343",
+                "PGI_114053114141",
+                "PGI_114055117272",
+                "PGI_114052117272",
+                "PGI_114291114040",
+                "PGI_114054117272",
+                "PGI_114055114141",
+                "PGI_114283114061",
+                "PGI_114301117272",
+                "PGI_114281113333",
+                "PGI_114068113131",
+                "PGI_114303114033",
+                "PGI_114281114151",
+                "PGI_114291114343",
+                "PGI_114055113333",
+                "PGI_114281114040",
+                "PGI_114311114343",
+                "PGI_114301114151",
+                "PGI_114303114061",
+                "PGI_114301113333",
+                "PGI_114281117272",
+                "PGI_114283114033",
+                "PGI_114070114343",
+                "PGI_114068114343",
+                "PGI_114294114333",
+                "PGI_114070113131",
+                "PGI_114071113131",
+                "PGI_114069114343",
+                "PGI_114294114341",
+                "PGI_114305114085",
+                "PGI_114314114333",
+                "PGI_114314114341",
+                "PGI_114286114341",
+                "PGI_114286114348",
+                "PGI_114286114381",
+                "PGI_114286114333",
+                "PGI_114286114085",
+                "PGI_114305114381",
+                "PGI_114305114333",
+                "PGI_114305114341",
+                "PGI_114305114348",
+                "PGI_114080313535",
+                "PGI_114083313535",
+                "PGI_401107911",
+                "PGI_409911484",
+                "PGI_409911481",
+                "PGI_CM049274",
+                "PGI_CM049636",
+                "PGI_CM049632",
+                "PGI_CM049630",
+                "PGI_CM049634",
+                "PGI_CM051604",
+                "PGI_CM049182",
+                "PGI_CM049318",
+                "PGI_CM051322",
+                "PGI_CM051510",
+                "PGI_CM051416",
+                "PGI_CM049228",
+                "PGI_CM049292",
+                "PGI_CM049032",
+                "PGI_CM049248",
+                "PGI_CM049156",
+                "PGI_CM049202",
+                "PGI_CM051572",
+                "PGI_CM051574",
+                "PGI_CM049294",
+                "PGI_CM051386",
+                "PGI_CM051478",
+                "PGI_CM051480",
+                "PGI_CM051666",
+                "PGI_CM051384",
+                "PGI_CM051668",
+                "PGI_CM049218",
+                "PGI_CM049272",
+                "PGI_CM049264",
+                "PGI_CM049226",
+                "PGI_CM049174",
+                "PGI_CM049316",
+                "PGI_CM051624",
+                "PGI_CM051342",
+                "PGI_CM051436",
+                "PGI_CM051438",
+                "PGI_CM051530",
+                "PGI_CM049308",
+                "PGI_CM051344",
+                "PGI_CM051532",
+                "PGI_CM051626",
+                "PGI_CM051468",
+                "PGI_CM051470",
+                "PGI_CM051376",
+                "PGI_CM051564",
+                "PGI_CM051374",
+                "PGI_CM051420",
+                "PGI_CM051514",
+                "PGI_CM051660",
+                "PGI_CM051326",
+                "PGI_CM051378",
+                "PGI_CM051472",
+                "PGI_CM051608",
+                "PGI_CM051656",
+                "PGI_CM051658",
+                "PGI_CM049304",
+                "PGI_CM051524",
+                "PGI_CM052270",
+                "PGI_CM049168",
+                "PGI_CM052272",
+                "PGI_CM049214",
+                "PGI_CM051430",
+                "PGI_CM052268",
+                "PGI_CM051336",
+                "PGI_CM049260",
+                "PGI_CM052274",
+                "PGI_CM051618",
+                "PGI_CM051338",
+                "PGI_CM049400",
+                "PGI_CM049392",
+                "PGI_CM051526",
+                "PGI_CM049408",
+                "PGI_CM049416",
+                "PGI_CM051432",
+                "PGI_CM049216",
+                "PGI_CM049170",
+                "PGI_CM049306",
+                "PGI_CM051620",
+                "PGI_CM049262",
+                "PGI_CM049198",
+                "PGI_CM049152",
+                "PGI_CM049244",
+                "PGI_CM049288",
+                "PGI_CM049024",
+                "PGI_CM051662",
+                "PGI_CM049290",
+                "PGI_CM051380",
+                "PGI_CM049200",
+                "PGI_CM049026",
+                "PGI_CM049020",
+                "PGI_CM051474",
+                "PGI_CM049022",
+                "PGI_CM051568",
+                "PGI_CM051674",
+                "PGI_CM051486",
+                "PGI_CM051534",
+                "PGI_CM051580",
+                "PGI_CM051628",
+                "PGI_CM051392",
+                "PGI_CM051346",
+                "PGI_CM051440",
+                "PGI_WIZ001TTBK",
+                "PGI_WIZ017TTWH",
+                "PGI_CAA001BT3MWH",
+                "PGI_CAA002BT1MBK",
+                "PGI_CCD001BT1MBK",
+                "PGI_CAA001BT1MBK",
+                "PGI_CAA001BT1MWH",
+                "PGI_WCD001DQ1MWH",
+                "PGI_CCA003BT04BK",
+                "PGI_CAA003BT1MBK",
+                "PGI_CAA003BT1MWH",
+                "PGI_WIC002BTGR"
+              ]
+            }
+          ],
+          "title": [
+            {
+              "en": "Great. Which model is it?"
+            }
+          ],
+          "options": [
+            {
+              "title": {
+                "en": "IPHONE 15 PRO MAX"
+              },
+              "keywords": {
+                "en": ["iphone", "15", "pro", "max"]
+              },
+              "event": "IPHONE_15_PRO_MAX"
+            },
+            {
+              "title": {
+                "en": "IPHONE 15 PRO"
+              },
+              "keywords": {
+                "en": ["iphone", "15", "pro"]
+              },
+              "event": "IPHONE_15_PRO"
+            },
+            {
+              "title": {
+                "en": "IPHONE 15 PLUS"
+              },
+              "keywords": {
+                "en": ["iphone", "15", "plus"]
+              },
+              "event": "IPHONE_15_PLUS"
+            },
+            {
+              "title": {
+                "en": "IPHONE 15"
+              },
+              "keywords": {
+                "en": ["iphone", "15"]
+              },
+              "event": "IPHONE_15"
+            },
+            {
+              "title": {
+                "en": "IPHONE 14 PRO MAX"
+              },
+              "keywords": {
+                "en": ["iphone", "14", "pro", "max"]
+              },
+              "event": "IPHONE_14_PRO_MAX"
+            },
+            {
+              "title": {
+                "en": "IPHONE 14 PRO"
+              },
+              "keywords": {
+                "en": ["iphone", "14", "pro"]
+              },
+              "event": "IPHONE_14_PRO"
+            },
+            {
+              "title": {
+                "en": "IPHONE 14 PLUS"
+              },
+              "keywords": {
+                "en": ["iphone", "14", "plus"]
+              },
+              "event": "IPHONE_14_PLUS"
+            },
+            {
+              "title": {
+                "en": "IPHONE 14"
+              },
+              "keywords": {
+                "en": ["iphone", "14"]
+              },
+              "event": "IPHONE_14"
+            }
+          ],
+          "on": {
+            "IPHONE_15_PRO_MAX": "iphone_15_pro_max",
+            "IPHONE_15_PRO": "iphone_15_pro",
+            "IPHONE_15_PLUS": "iphone_15_plus",
+            "IPHONE_15": "iphone_15",
+            "IPHONE_14_PRO_MAX": "iphone_14_pro_max",
+            "IPHONE_14_PRO": "iphone_14_pro",
+            "IPHONE_14_PLUS": "iphone_14_plus",
+            "IPHONE_14": "iphone_14"
+          },
+          "states": {
+            "iphone_15_pro_max": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ALL_PRODUCTS",
+                  "productIds": [
+                    "PGI_702311706",
+                    "PGI_702311718",
+                    "PGI_702311726",
+                    "PGI_702311730",
+                    "PGI_702311746",
+                    "PGI_702311754",
+                    "PGI_702311900",
+                    "PGI_702311948",
+                    "PGI_702311956",
+                    "PGI_702311912",
+                    "PGI_702312032",
+                    "PGI_702312056",
+                    "PGI_114295114040",
+                    "PGI_114295117272",
+                    "PGI_114295119049",
+                    "PGI_114295115555",
+                    "PGI_114296114040",
+                    "PGI_114296117272",
+                    "PGI_114297113940",
+                    "PGI_114298119494",
+                    "PGI_114222114242",
+                    "PGI_11422211397B",
+                    "PGI_114222113333",
+                    "PGI_114222113940",
+                    "PGI_114301114040",
+                    "PGI_114301114343",
+                    "PGI_114301117272",
+                    "PGI_114303114033",
+                    "PGI_114301114151",
+                    "PGI_114303114061",
+                    "PGI_114301113333",
+                    "PGI_114305114085",
+                    "PGI_114305114381",
+                    "PGI_114305114333",
+                    "PGI_114305114341",
+                    "PGI_114305114348",
+                    "PGI_CM051604",
+                    "PGI_CM051666",
+                    "PGI_CM051668",
+                    "PGI_CM051624",
+                    "PGI_CM051626",
+                    "PGI_CM051660",
+                    "PGI_CM051608",
+                    "PGI_CM051656",
+                    "PGI_CM051658",
+                    "PGI_CM052274",
+                    "PGI_CM051618",
+                    "PGI_CM051620",
+                    "PGI_CM051662",
+                    "PGI_CM051674",
+                    "PGI_CM051628"
+                  ]
+                }
+              ]
+            },
+            "iphone_15_pro": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ALL_PRODUCTS",
+                  "productIds": [
+                    "PGI_702311717",
+                    "PGI_702311705",
+                    "PGI_702311725",
+                    "PGI_702311729",
+                    "PGI_702311745",
+                    "PGI_702311899",
+                    "PGI_702311911",
+                    "PGI_702311753",
+                    "PGI_702311947",
+                    "PGI_702311955",
+                    "PGI_702312055",
+                    "PGI_702312031",
+                    "PGI_114275119049",
+                    "PGI_114275115555",
+                    "PGI_114275117272",
+                    "PGI_114276117272",
+                    "PGI_114276114040",
+                    "PGI_114278119494",
+                    "PGI_114277113940",
+                    "PGI_114221113333",
+                    "PGI_114221113940",
+                    "PGI_114221114242",
+                    "PGI_114281114343",
+                    "PGI_114283114061",
+                    "PGI_114281113333",
+                    "PGI_114281114151",
+                    "PGI_114281114040",
+                    "PGI_114281117272",
+                    "PGI_114283114033",
+                    "PGI_114286114341",
+                    "PGI_114286114348",
+                    "PGI_114286114381",
+                    "PGI_114286114333",
+                    "PGI_114286114085",
+                    "PGI_CM051416",
+                    "PGI_CM051478",
+                    "PGI_CM051480",
+                    "PGI_CM051436",
+                    "PGI_CM051438",
+                    "PGI_CM051468",
+                    "PGI_CM051470",
+                    "PGI_CM051420",
+                    "PGI_CM051472",
+                    "PGI_CM052270",
+                    "PGI_CM051430",
+                    "PGI_CM051432",
+                    "PGI_CM051474",
+                    "PGI_CM051486",
+                    "PGI_CM051440"
+                  ]
+                }
+              ]
+            },
+            "iphone_15_plus": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ALL_PRODUCTS",
+                  "productIds": [
+                    "PGI_702311724",
+                    "PGI_702311704",
+                    "PGI_702311728",
+                    "PGI_702311744",
+                    "PGI_702311898",
+                    "PGI_702311752",
+                    "PGI_114306117272",
+                    "PGI_114307114040",
+                    "PGI_114307117272",
+                    "PGI_114308113940",
+                    "PGI_114220114242",
+                    "PGI_114311114040",
+                    "PGI_114311117272",
+                    "PGI_114311114343",
+                    "PGI_114314114333",
+                    "PGI_114314114341",
+                    "PGI_CM051510",
+                    "PGI_CM051572",
+                    "PGI_CM051574",
+                    "PGI_CM051530",
+                    "PGI_CM051532",
+                    "PGI_CM051564",
+                    "PGI_CM051514",
+                    "PGI_CM051524",
+                    "PGI_CM052272",
+                    "PGI_CM051526",
+                    "PGI_CM051568",
+                    "PGI_CM051534",
+                    "PGI_CM051580"
+                  ]
+                }
+              ]
+            },
+            "iphone_15": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ALL_PRODUCTS",
+                  "productIds": [
+                    "PGI_702311699",
+                    "PGI_702311703",
+                    "PGI_702311715",
+                    "PGI_702311723",
+                    "PGI_702311743",
+                    "PGI_702311727",
+                    "PGI_702311735",
+                    "PGI_702311897",
+                    "PGI_702311909",
+                    "PGI_702311751",
+                    "PGI_702311945",
+                    "PGI_702311953",
+                    "PGI_702312029",
+                    "PGI_114287114040",
+                    "PGI_114287117272",
+                    "PGI_114288117272",
+                    "PGI_114288114040",
+                    "PGI_114315113940",
+                    "PGI_114219114242",
+                    "PGI_114291117272",
+                    "PGI_114291114040",
+                    "PGI_114291114343",
+                    "PGI_114294114333",
+                    "PGI_114294114341",
+                    "PGI_CM051322",
+                    "PGI_CM051386",
+                    "PGI_CM051384",
+                    "PGI_CM051342",
+                    "PGI_CM051344",
+                    "PGI_CM051376",
+                    "PGI_CM051374",
+                    "PGI_CM051326",
+                    "PGI_CM051378",
+                    "PGI_CM052268",
+                    "PGI_CM051336",
+                    "PGI_CM051338",
+                    "PGI_CM051380",
+                    "PGI_CM051392",
+                    "PGI_CM051346"
+                  ]
+                }
+              ]
+            },
+            "iphone_14_pro_max": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ALL_PRODUCTS",
+                  "productIds": [
+                    "PGI_114039115555",
+                    "PGI_114039114040",
+                    "PGI_114088110243",
+                    "PGI_114055117272",
+                    "PGI_114055114141",
+                    "PGI_114055113333",
+                    "PGI_114071113131",
+                    "PGI_114083313535",
+                    "PGI_CM049636",
+                    "PGI_CM049318",
+                    "PGI_CM049292",
+                    "PGI_CM049294",
+                    "PGI_CM049316",
+                    "PGI_CM049308",
+                    "PGI_CM049304",
+                    "PGI_CM049416",
+                    "PGI_CM049306",
+                    "PGI_CM049288",
+                    "PGI_CM049290",
+                    "PGI_CM049026"
+                  ]
+                }
+              ]
+            },
+            "iphone_14_pro": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ALL_PRODUCTS",
+                  "productIds": [
+                    "PGI_114038115555",
+                    "PGI_114091114040",
+                    "PGI_114091110243",
+                    "PGI_114054114141",
+                    "PGI_114054117272",
+                    "PGI_114070114343",
+                    "PGI_114070113131",
+                    "PGI_CM049632",
+                    "PGI_CM049228",
+                    "PGI_CM049202",
+                    "PGI_CM049218",
+                    "PGI_CM049226",
+                    "PGI_CM049214",
+                    "PGI_CM049400",
+                    "PGI_CM049216",
+                    "PGI_CM049198",
+                    "PGI_CM049200",
+                    "PGI_CM049022"
+                  ]
+                }
+              ]
+            },
+            "iphone_14_plus": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ALL_PRODUCTS",
+                  "productIds": [
+                    "PGI_114029113333",
+                    "PGI_114053114141",
+                    "PGI_114069114343",
+                    "PGI_CM049274",
+                    "PGI_CM049634",
+                    "PGI_CM049032",
+                    "PGI_CM049248",
+                    "PGI_CM049272",
+                    "PGI_CM049264",
+                    "PGI_CM049260",
+                    "PGI_CM049408",
+                    "PGI_CM049262",
+                    "PGI_CM049244",
+                    "PGI_CM049024"
+                  ]
+                }
+              ]
+            },
+            "iphone_14": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ALL_PRODUCTS",
+                  "productIds": [
+                    "PGI_114052114141",
+                    "PGI_114052117272",
+                    "PGI_114068113131",
+                    "PGI_114068114343",
+                    "PGI_114080313535",
+                    "PGI_CM049630",
+                    "PGI_CM049182",
+                    "PGI_CM049156",
+                    "PGI_CM049174",
+                    "PGI_CM049168",
+                    "PGI_CM049392",
+                    "PGI_CM049170",
+                    "PGI_CM049152",
+                    "PGI_CM049020"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "samsung": {
+          "entry": [
+            {
+              "type": "CLICK_CATEGORY",
+              "category": "CONN_ALL_PRODUCTS",
+              "productIds": [
+                "PGI_702312273",
+                "PGI_214358117272",
+                "PGI_214007114040",
+                "PGI_214007115555",
+                "PGI_214358114040",
+                "PGI_214120113333",
+                "PGI_214130113940",
+                "PGI_214144114242",
+                "PGI_214135113333",
+                "PGI_214132114040",
+                "PGI_214122114040",
+                "PGI_214122114061",
+                "PGI_214132114061",
+                "PGI_214137114061",
+                "PGI_214134114343",
+                "PGI_214357114343",
+                "PGI_21421411723A",
+                "PGI_214215114333",
+                "PGI_21421411313A",
+                "PGI_214214114333",
+                "PGI_21421511313A",
+                "PGI_21421511723A",
+                "PGI_CM050456",
+                "PGI_CM050458",
+                "PGI_CM053136",
+                "PGI_CM050680",
+                "PGI_CM050460",
+                "PGI_CM050682",
+                "PGI_CM050684",
+                "PGI_CM050694",
+                "PGI_CM050692",
+                "PGI_CM050696",
+                "PGI_CM053134",
+                "PGI_CM050376",
+                "PGI_CM050370",
+                "PGI_CM050372",
+                "PGI_CM053062",
+                "PGI_CM052260",
+                "PGI_CM050374",
+                "PGI_CM052258",
+                "PGI_CM046290",
+                "PGI_CM050386",
+                "PGI_CM050382",
+                "PGI_CM050384",
+                "PGI_CM049136",
+                "PGI_CM050394",
+                "PGI_CM050396",
+                "PGI_CM050398",
+                "PGI_CM052894",
+                "PGI_CM053132"
+              ]
+            }
+          ],
+          "title": [
+            {
+              "en": "Great. Which model is it?"
+            }
+          ],
+          "options": [
+            {
+              "title": {
+                "en": "GALAXY Z FOLD 5"
+              },
+              "keywords": {
+                "en": ["galaxy", "fold"]
+              },
+              "event": "GALAXY_Z_FOLD_5"
+            },
+            {
+              "title": {
+                "en": "GALAXY Z FLIP 5"
+              },
+              "keywords": {
+                "en": ["galaxy", "flip"]
+              },
+              "event": "GALAXY_Z_FLIP_5"
+            },
+            {
+              "title": {
+                "en": "GALAXY Z FLIP 4"
+              },
+              "keywords": {
+                "en": ["galaxy", "flip"]
+              },
+              "event": "GALAXY_Z_FLIP_4"
+            },
+            {
+              "title": {
+                "en": "GALAXY Z FLIP 3 5G"
+              },
+              "keywords": {
+                "en": ["galaxy", "flip"]
+              },
+              "event": "GALAXY_Z_FLIP_3_5G"
+            },
+            {
+              "title": {
+                "en": "GALAXY S23 ULTRA"
+              },
+              "keywords": {
+                "en": ["galaxy", "s23", "ultra"]
+              },
+              "event": "GALAXY_S23_ULTRA"
+            },
+            {
+              "title": {
+                "en": "GALAXY S23 PLUS"
+              },
+              "keywords": {
+                "en": ["galaxy", "s23", "plus"]
+              },
+              "event": "GALAXY_S23_PLUS"
+            },
+            {
+              "title": {
+                "en": "GALAXY S23 FE"
+              },
+              "keywords": {
+                "en": ["galaxy", "s23", "fe"]
+              },
+              "event": "GALAXY_S23_FE"
+            },
+            {
+              "title": {
+                "en": "GALAXY S23"
+              },
+              "keywords": {
+                "en": ["galaxy", "s23"]
+              },
+              "event": "GALAXY_S23"
+            }
+          ],
+          "on": {
+            "GALAXY_Z_FOLD_5": "galaxy_z_fold_5",
+            "GALAXY_Z_FLIP_5": "galaxy_z_flip_5",
+            "GALAXY_Z_FLIP_4": "galaxy_z_flip_4",
+            "GALAXY_Z_FLIP_3_5G": "galaxy_z_flip_3_5g",
+            "GALAXY_S23_ULTRA": "galaxy_s23_ultra",
+            "GALAXY_S23_PLUS": "galaxy_s23_plus",
+            "GALAXY_S23_FE": "galaxy_s23_fe",
+            "GALAXY_S23": "galaxy_s23"
+          },
+          "states": {
+            "galaxy_z_fold_5": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ALL_PRODUCTS",
+                  "productIds": [
+                    "PGI_214358117272",
+                    "PGI_214358114040",
+                    "PGI_214215114333",
+                    "PGI_21421511313A",
+                    "PGI_21421511723A",
+                    "PGI_CM052260"
+                  ]
+                }
+              ]
+            },
+            "galaxy_z_flip_5": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ALL_PRODUCTS",
+                  "productIds": [
+                    "PGI_214357114343",
+                    "PGI_21421411723A",
+                    "PGI_21421411313A",
+                    "PGI_214214114333",
+                    "PGI_CM052258"
+                  ]
+                }
+              ]
+            },
+            "galaxy_z_flip_4": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ALL_PRODUCTS",
+                  "productIds": [
+                    "PGI_214007114040",
+                    "PGI_214007115555",
+                    "PGI_CM049136"
+                  ]
+                }
+              ]
+            },
+            "galaxy_z_flip_3_5g": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ALL_PRODUCTS",
+                  "productIds": ["PGI_CM046290"]
+                }
+              ]
+            },
+            "galaxy_s23_ultra": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ALL_PRODUCTS",
+                  "productIds": [
+                    "PGI_214135113333",
+                    "PGI_214137114061",
+                    "PGI_CM050460",
+                    "PGI_CM050684",
+                    "PGI_CM050696",
+                    "PGI_CM050374",
+                    "PGI_CM050386",
+                    "PGI_CM050398"
+                  ]
+                }
+              ]
+            },
+            "galaxy_s23_plus": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ALL_PRODUCTS",
+                  "productIds": [
+                    "PGI_214130113940",
+                    "PGI_214132114040",
+                    "PGI_214132114061",
+                    "PGI_214134114343",
+                    "PGI_CM050458",
+                    "PGI_CM050682",
+                    "PGI_CM050694",
+                    "PGI_CM050372",
+                    "PGI_CM050384",
+                    "PGI_CM050396"
+                  ]
+                }
+              ]
+            },
+            "galaxy_s23_fe": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ALL_PRODUCTS",
+                  "productIds": [
+                    "PGI_702312273",
+                    "PGI_CM053136",
+                    "PGI_CM053134",
+                    "PGI_CM053062",
+                    "PGI_CM052894",
+                    "PGI_CM053132"
+                  ]
+                }
+              ]
+            },
+            "galaxy_s23": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ALL_PRODUCTS",
+                  "productIds": [
+                    "PGI_214120113333",
+                    "PGI_214144114242",
+                    "PGI_214122114040",
+                    "PGI_214122114061",
+                    "PGI_CM050456",
+                    "PGI_CM050680",
+                    "PGI_CM050692",
+                    "PGI_CM050376",
+                    "PGI_CM050370",
+                    "PGI_CM050382",
+                    "PGI_CM050394"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "google": {
+          "entry": [
+            {
+              "type": "CLICK_CATEGORY",
+              "category": "CONN_ALL_PRODUCTS",
+              "productIds": [
+                "PGI_702312147",
+                "PGI_702312148",
+                "PGI_614318117272",
+                "PGI_CM052680",
+                "PGI_CM052682",
+                "PGI_CM051094",
+                "PGI_CM053118",
+                "PGI_CM053120",
+                "PGI_CM051062",
+                "PGI_CM048936",
+                "PGI_CM050608",
+                "PGI_CM048932",
+                "PGI_CM052736",
+                "PGI_CM052734"
+              ]
+            }
+          ],
+          "title": [
+            {
+              "en": "Great. Which model is it?"
+            }
+          ],
+          "options": [
+            {
+              "title": {
+                "en": "PIXEL 8 PRO"
+              },
+              "keywords": {
+                "en": ["pixel", "pro"]
+              },
+              "event": "PIXEL_8_PRO"
+            },
+            {
+              "title": {
+                "en": "PIXEL 8"
+              },
+              "keywords": {
+                "en": ["pixel"]
+              },
+              "event": "PIXEL_8"
+            },
+            {
+              "title": {
+                "en": "PIXEL 7A"
+              },
+              "keywords": {
+                "en": ["pixel"]
+              },
+              "event": "PIXEL_7A"
+            },
+            {
+              "title": {
+                "en": "PIXEL 7 PRO"
+              },
+              "keywords": {
+                "en": ["pixel", "pro"]
+              },
+              "event": "PIXEL_7_PRO"
+            },
+            {
+              "title": {
+                "en": "PIXEL 7"
+              },
+              "keywords": {
+                "en": ["pixel"]
+              },
+              "event": "PIXEL_7"
+            }
+          ],
+          "on": {
+            "PIXEL_8_PRO": "pixel_8_pro",
+            "PIXEL_8": "pixel_8",
+            "PIXEL_7A": "pixel_7a",
+            "PIXEL_7_PRO": "pixel_7_pro",
+            "PIXEL_7": "pixel_7"
+          },
+          "states": {
+            "pixel_8_pro": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ALL_PRODUCTS",
+                  "productIds": [
+                    "PGI_702312148",
+                    "PGI_CM052680",
+                    "PGI_CM053118",
+                    "PGI_CM052734"
+                  ]
+                }
+              ]
+            },
+            "pixel_8": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ALL_PRODUCTS",
+                  "productIds": [
+                    "PGI_702312147",
+                    "PGI_614318117272",
+                    "PGI_CM052682",
+                    "PGI_CM053120",
+                    "PGI_CM052736"
+                  ]
+                }
+              ]
+            },
+            "pixel_7a": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ALL_PRODUCTS",
+                  "productIds": ["PGI_CM051094", "PGI_CM051062", "PGI_CM050608"]
+                }
+              ]
+            },
+            "pixel_7_pro": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ALL_PRODUCTS",
+                  "productIds": ["PGI_CM048932"]
+                }
+              ]
+            },
+            "pixel_7": {
+              "entry": [
+                {
+                  "type": "CLICK_CATEGORY",
+                  "category": "CONN_ALL_PRODUCTS",
+                  "productIds": ["PGI_CM048936"]
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
